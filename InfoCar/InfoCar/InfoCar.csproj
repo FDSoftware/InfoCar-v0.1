@@ -82,11 +82,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectDB.cs" />
-    <Compile Include="databox.cs">
+    <Compile Include="..\..\..\..\GitHub\InfoCar-v0.1\InfoCar\InfoCar\databox.cs">
       <SubType>Form</SubType>
+      <Link>databox.cs</Link>
     </Compile>
-    <Compile Include="databox.Designer.cs">
+    <Compile Include="..\..\..\..\GitHub\InfoCar-v0.1\InfoCar\InfoCar\databox.Designer.cs">
       <DependentUpon>databox.cs</DependentUpon>
+      <Link>databox.Designer.cs</Link>
     </Compile>
     <Compile Include="DatsCarDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -101,8 +103,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="databox.resx">
+    <EmbeddedResource Include="..\..\..\..\GitHub\InfoCar-v0.1\InfoCar\InfoCar\databox.resx">
       <DependentUpon>databox.cs</DependentUpon>
+      <Link>databox.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>

@@ -57,6 +57,7 @@ namespace InfoCar
             return seed;
             }
         public bool SaveData(string[] data) {
+            OleCn = new SQLiteConnection(StringConnect);
             int isQuery = 0;
             bool finish = false;
             OleCn.Open();
@@ -72,6 +73,7 @@ namespace InfoCar
                 OleCmd.Parameters.AddWithValue("@solucion", data[7].ToString());
                 OleCmd.Parameters.AddWithValue("@error", data[8].ToString());
                 isQuery = OleCmd.ExecuteNonQuery();
+                OleCn.Close();
                 if (isQuery > 0)
                 {
                     finish = true;
